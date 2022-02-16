@@ -1,1 +1,16 @@
 Run `exec -l $SHELL` to restart your shell. **
+
+
+dig +short myip.opendns.com @resolver1.opendns.com
+
+
+
+uptime
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+ibdiagnet
+ibhosts
+iblinkinfo
+grep -ri error /var/log/
+grep -ri warning /var/log/
+netstat -in
