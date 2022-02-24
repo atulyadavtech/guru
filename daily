@@ -1,10 +1,12 @@
-Run `exec -l $SHELL` to restart your shell. **
 
+##Restart Your Shell
+exec -l $SHELL
 
+## Get Public IP 
 dig +short myip.opendns.com @resolver1.opendns.com
 
 
-
+##Know Your Infra
 uptime
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
@@ -14,3 +16,8 @@ iblinkinfo
 grep -ri error /var/log/
 grep -ri warning /var/log/
 netstat -in
+
+
+
+#Loop
+for i in `ls` ; do tar -xvzf $i ; done
